@@ -49,6 +49,7 @@ class TodoListsController < ApplicationController
 
   # DELETE /todo_lists/1 or /todo_lists/1.json
   def destroy
+    @todo_list = TodoList.find(params[:id])
     @todo_list.destroy
 
     respond_to do |format|
@@ -57,7 +58,7 @@ class TodoListsController < ApplicationController
     end
   end
 
-  private
+  #private
     # Use callbacks to share common setup or constraints between actions.
     def set_todo_list
       @todo_list = TodoList.find(params[:id])
