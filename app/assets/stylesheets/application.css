@@ -13,3 +13,56 @@
  *= require_tree .
  *= require_self
  */
+
+ .todo_lists{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .todo_list{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    margin: 20px;
+ }
+ .web-page_wrapper{
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 0.2px solid rgb(80, 71, 71);
+    background-color: rgba(255, 255, 255, 0.692);
+    box-shadow: 2px 10px 8px rgb(0, 0, 0);
+ }
+
+ body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: azure;
+    color: rgba(0, 0, 0, 0.616);
+ }
+
+ #header{
+    border: 1px solid rgb(80, 76, 76);
+ }
+
+ .index_title_main{
+    align-content: center;
+    text-align: center;
+ }
+
+ .new_list{
+    text-align: center;
+    padding: 20px 0;
+ }
+
+ #header_item{
+    font-size: 30px;
+    font-weight:lighter;
+ }
+
+ .index_title{
+    font-size: 20px;
+    font-weight:400;
+ }
