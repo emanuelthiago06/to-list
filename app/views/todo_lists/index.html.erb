@@ -4,7 +4,15 @@
 
 <div id="todo_lists">
   <% @todo_lists.each do |todo_list| %>
-    <%= render todo_list %>
+
+  <p>
+    <strong>Title:</strong>
+    <%= todo_list.title %>
+  </p>
+  <p>
+    <strong>Description:</strong>
+    <%= todo_list.description %>
+</p>
     <p>
       <%= link_to "Show this todo list", todo_list %>
     </p>
