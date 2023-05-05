@@ -2,34 +2,22 @@
 
 <h1 class = "index_title_main">Listas To-do</h1>
 
-
-<div class="todo_lists">
-  <div class = "todo_list", id = "header">
-    <h3 id = "header_item">Titulo</h3>
-    <h3 id = "header_item">Descrição</h3>
-    <h3 id = "header_item">Opções</h3>
-  </div>
   <% @todo_lists.each do |todo_list| %>
   <div class = "todo_list">
-    <div class = "index_title">
-      <p>
-        <%= todo_list.title %>
-      </p>
-    </div>
-    <div class = "index_description">
-      <p>
-        <%= todo_list.description %>
-      </p>
+    <div class = "index_title_description_wrapper">
+      <div class = "index_title">
+          <%= link_to todo_list.title, todo_list, class: "index_title" %>
+      </div>
+      <div class = "index_description">
+          <%= todo_list.description %>
+        </div>
       </div>
       <div class = "index_list_crud">
-        <p>
-          <%= link_to "Ver essa lista to-do", todo_list %>
-        </p>
+        <p>PlaceHolder</p>
       </div>
     </div>
     <% end %>
-</div>
-
-<div class = "new_list">
-<%= link_to "Nova lista to-do", new_todo_list_path %>
+    <div class = "new_list">
+      <%= link_to "Nova lista to-do", new_todo_list_path, class: "new_list" %>
+    </div>
 </div>
