@@ -13,3 +13,103 @@
  *= require_tree .
  *= require_self
  */
+
+ .todo_list{
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   padding: 10px;
+   border-bottom: 1px solid black;
+   margin: 20px;
+ }
+ .web-page_wrapper{
+   margin-left: 15%;
+   margin-right: 15%;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   border: 0.2px solid rgb(80, 71, 71);
+   background-color: #c3daecaf;
+   box-shadow: 2px 10px 8px rgb(0, 0, 0);
+ }
+
+ body{
+   font-family: 'Lato', sans-serif;    
+   color: rgba(0, 0, 0, 0.616);
+   background-color: #a6cdeb5b;
+    }
+
+ #header{
+   border: 1px solid rgb(80, 76, 76);
+ }
+
+ .index_title_main{
+   align-content: center;
+   text-align: center;
+   font-size: 60px;
+   font-weight: 700;
+ }
+
+ .new_list{
+   text-align: center;
+   padding: 20px 0;
+ }
+
+ #header_item{
+   font-size: 30px;
+   font-weight:lighter;
+ }
+
+ .index_title, .show_title{
+   text-decoration: none;
+   color: rgba(0, 0, 0, 0.420);
+   font-size: 50px;
+   font-weight: 700;
+ }
+
+ .index_description{
+
+ }
+
+ .new_list{
+   text-decoration: none;
+   color: rgba(0, 0, 0, 0.616);
+ }
+
+ .header_title, .index_title_description_wrapper, .show_title_description_wrapper{
+   flex-grow: 1;
+   text-align: center;
+ } 
+
+ .index_description_wrapper{
+   padding: 20px;
+ }
+
+ .todo_item_wrapper{
+   display: flex;
+   justify-content: space-around;
+ }
+
+ .todo_item_options{
+   display: flex;
+   flex-direction: row;
+ }
+
+ .todo-list_options_show{
+   text-align: center;
+   padding-top: 1rem;
+ }
+
+ #todo_list_edit, #todo_list_back, #todo_list_delete{
+   text-decoration: none;
+   padding-right: 0.5rem;
+   color: rgba(0, 0, 0, 0.616);
+ }
+
+ #form{
+   text-align: center;
+   padding-top: 1rem;
+ }
+
+ .edit_todo_list_wrapper{
+   padding: 1rem;
+ }

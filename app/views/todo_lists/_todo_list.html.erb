@@ -1,12 +1,15 @@
 <p id="notice"><%= notice %></p>
-<p>
-  <strong>Title:</strong>
-  <%= todo_list.title %>
-</p>
-<p>
-  <strong>Description:</strong>
-  <%= todo_list.description %>
-</p>
+
+<div class = "show_title_description_wrapper" >
+  <div class = "show_title">
+    <%= todo_list.title%>
+  </div>
+  <div class = "show_description">
+    <%= todo_list.description%>
+  </div>
+</div>
+
+
 <div id="todo_items_wrapper">
 <% @todo_list_partial = todo_list%>
  <%= render todo_list.todo_items %>
@@ -15,6 +18,3 @@
   <%= render "todo_items/form" %>
  </div>
 </div>
-<%= link_to 'Edit', edit_todo_list_path(todo_list) %>
-
-<%= link_to 'Back', todo_lists_path %>

@@ -1,14 +1,23 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Todo lists</h1>
+<h1 class = "index_title_main">Listas To-do</h1>
 
-<div id="todo_lists">
   <% @todo_lists.each do |todo_list| %>
-    <%= render todo_list %>
-    <p>
-      <%= link_to "Show this todo list", todo_list %>
-    </p>
-  <% end %>
+  <div class = "todo_list">
+    <div class = "index_title_description_wrapper">
+      <div class = "index_title">
+          <%= link_to todo_list.title, todo_list, class: "index_title" %>
+      </div>
+      <div class = "index_description">
+          <%= todo_list.description %>
+        </div>
+      </div>
+      <div class = "index_list_crud">
+        <p>PlaceHolder</p>
+      </div>
+    </div>
+    <% end %>
+    <div class = "new_list">
+      <%= link_to "Nova lista to-do", new_todo_list_path, class: "new_list" %>
+    </div>
 </div>
-
-<%= link_to "New todo list", new_todo_list_path %>
