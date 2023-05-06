@@ -28,14 +28,14 @@
    margin-top: 50px;
    margin-bottom: 50px;
    border: 0.2px solid rgb(80, 71, 71);
-   background-color: #c3daecaf;
+   background-color: whitesmoke;
    box-shadow: 2px 10px 8px rgb(0, 0, 0);
  }
 
  body{
    font-family: 'Lato', sans-serif;    
    color: rgba(0, 0, 0, 0.616);
-   background-color: #a6cdeb5b;
+   background-color: rgba(117, 114, 114, 0.637);
     }
 
  #header{
@@ -78,6 +78,7 @@
  .header_title, .index_title_description_wrapper, .show_title_description_wrapper{
    flex-grow: 1;
    text-align: center;
+   margin-bottom: 2rem;
  } 
 
  .index_description_wrapper{
@@ -97,6 +98,7 @@
  .todo-list_options_show{
    text-align: center;
    padding-top: 1rem;
+   margin-bottom: 1rem;
  }
 
  #todo_list_edit, #todo_list_back, #todo_list_delete{
@@ -112,4 +114,43 @@
 
  .edit_todo_list_wrapper{
    padding: 1rem;
+ }
+
+ #btn{
+   margin-left: 1rem;
+   margin-bottom: 1rem;
+   background-color: none;
+   padding: 0.5rem 0.5rem;
+   font-size: 15px;
+   cursor: pointer;
+   transition: 0.8s;
+   border-radius: 7px;
+ }
+
+ .btn_delete{
+   border: 1px solid rgb(197, 102, 102);
+ }
+
+ .btn_delete:hover{
+   color: rgba(255, 0, 0, 0.521);
+ }
+
+ .btn_complete, .btn_uncomplete{
+   border: 1px solid rgb(67, 68, 73);
+ }
+
+ .btn_complete:hover, .btn_uncomplete:hover, .btn_edit:hover{
+   color: rgba(36, 36, 37, 0.267);
+ }
+
+ .btn_edit{
+   margin-top: 0.5rem;
+ }
+
+ #text_field{
+   border: 1px solid rgb(67, 68, 73);
+   border-radius: 7px;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+   margin-bottom: 1rem;
  }
