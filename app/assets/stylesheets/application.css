@@ -116,6 +116,10 @@
    padding: 1rem;
  }
 
+ .new_todo_wrapper{
+  margin-left: 1rem;
+ }
+
  #btn{
    margin-left: 1rem;
    margin-bottom: 1rem;
