@@ -1,0 +1,26 @@
+<% if current_user %>
+
+<li class="nav-item dropdown", style="text-align:right">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Opções de Lista
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="#">Ver Listas</a></li>
+        <li><a class="dropdown-item" href="#">Criar Nova lista</a></li>
+        <li><%= button_to "Logout", destroy_user_session_path, method: :delete, class:"dropdown-item" %></li>
+    </ul>
+</li>
+
+
+<% else %>
+    <li class="nav-item dropdown", style="text-align:right">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Logar
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><%= link_to "Login", new_user_session_path, class:"dropdown-item"%></li>
+        <li><%= link_to "Sign in", new_user_registration_path, class:"dropdown-item"%></li>
+    </ul>
+</li>
+
+<% end %>
