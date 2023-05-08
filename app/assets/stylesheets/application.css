@@ -99,6 +99,8 @@
    text-align: center;
    padding-top: 1rem;
    margin-bottom: 1rem;
+   display: flex;
+   justify-content: center;
  }
 
  #todo_list_edit, #todo_list_back, #todo_list_delete{

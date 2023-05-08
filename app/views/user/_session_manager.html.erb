@@ -5,8 +5,8 @@
         Opções de Lista
     </a>
     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <li><a class="dropdown-item" href="#">Ver Listas</a></li>
-        <li><a class="dropdown-item" href="#">Criar Nova lista</a></li>
+        <li><%= link_to "Ver Minhas Listas", root_path, class:"dropdown-item" %></li>
+        <li><%= link_to "Criar Nova Lista", new_todo_list_path, class: "dropdown-item"  %></li>
         <li><%= button_to "Logout", destroy_user_session_path, method: :delete, class:"dropdown-item" %></li>
     </ul>
 </li>

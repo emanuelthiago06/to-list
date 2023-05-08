@@ -5,5 +5,5 @@
 <div class = "todo-list_options_show">
   <%= link_to 'Editar', edit_todo_list_path(@todo_list), id: "todo_list_edit" %>
   <%= link_to 'Voltar', todo_lists_path, id: "todo_list_back" %>
-  <%= link_to "Destruir lista", @todo_list, method: :delete, id: "todo_list_delete" %>
+  <%= button_to "Destruir lista", @todo_list, method: :delete, id: "btn", class: "btn_delete" %>
 </div>
