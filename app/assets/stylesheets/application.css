@@ -161,3 +161,57 @@
    margin-bottom: 1rem;
  }
 
+/* home-page styling */
+
+
+
+/* Header Styles */
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+	margin: 0;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+nav a {
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 0.2s;
+}
+
+nav a:hover {
+	color: #999;
+}
+
+/* Hero Styles */
+.hero {
+	padding: 100px 20px;
+	text-align: center;
+}
+
+.features{
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+}
+/* end of home-page styling */
