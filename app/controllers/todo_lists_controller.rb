@@ -1,9 +1,11 @@
 class TodoListsController < ApplicationController
   before_action :set_todo_list, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
 
   # GET /todo_lists or /todo_lists.json
   def index
     @todo_lists = TodoList.all
+    @todo_lists = TodoList.where(user_id: current_user.id)
   end
 
   # GET /todo_lists/1 or /todo_lists/1.json
@@ -22,6 +24,7 @@ class TodoListsController < ApplicationController
   # POST /todo_lists or /todo_lists.json
   def create
     @todo_list = TodoList.new(todo_list_params)
+    @todo_list.update_attribute(:user_id, current_user.id)
 
     respond_to do |format|
       if @todo_list.save
