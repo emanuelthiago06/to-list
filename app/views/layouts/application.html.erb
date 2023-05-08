@@ -21,11 +21,11 @@
 
   <body>
     <nav>
+      <%= render "navbar/navbar" %>
       <% if notice || alert%>
         <p class="notice"><%= notice %></p>
         <p class="alert"><%= alert %></p>
       <% end %>
-      <%= render "navbar/navbar" %>
     </nav>
     <div class = "web-page_wrapper">
       <%= yield %>
