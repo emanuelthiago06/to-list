@@ -28,14 +28,14 @@
    margin-top: 50px;
    margin-bottom: 50px;
    border: 0.2px solid rgb(80, 71, 71);
-   background-color: #c3daecaf;
+   background-color: whitesmoke;
    box-shadow: 2px 10px 8px rgb(0, 0, 0);
  }
 
  body{
    font-family: 'Lato', sans-serif;    
    color: rgba(0, 0, 0, 0.616);
-   background-color: #a6cdeb5b;
+   background-color: rgba(117, 114, 114, 0.637);
     }
 
  #header{
@@ -78,6 +78,7 @@
  .header_title, .index_title_description_wrapper, .show_title_description_wrapper{
    flex-grow: 1;
    text-align: center;
+   margin-bottom: 2rem;
  } 
 
  .index_description_wrapper{
@@ -97,6 +98,9 @@
  .todo-list_options_show{
    text-align: center;
    padding-top: 1rem;
+   margin-bottom: 1rem;
+   display: flex;
+   justify-content: center;
  }
 
  #todo_list_edit, #todo_list_back, #todo_list_delete{
@@ -113,3 +117,112 @@
  .edit_todo_list_wrapper{
    padding: 1rem;
  }
+
+ .new_todo_wrapper{
+  margin-left: 1rem;
+ }
+
+ #btn{
+   margin-left: 1rem;
+   margin-bottom: 1rem;
+   background-color: none;
+   padding: 0.5rem 0.5rem;
+   font-size: 15px;
+   cursor: pointer;
+   transition: 0.8s;
+   border-radius: 7px;
+ }
+
+ .btn_delete{
+   border: 1px solid rgb(197, 102, 102);
+ }
+
+ .btn_delete:hover{
+   color: rgba(255, 0, 0, 0.521);
+ }
+
+ .btn_complete, .btn_uncomplete{
+   border: 1px solid rgb(67, 68, 73);
+ }
+
+ .btn_complete:hover, .btn_uncomplete:hover, .btn_edit:hover{
+   color: rgba(36, 36, 37, 0.267);
+ }
+
+ .btn_edit{
+   margin-top: 0.5rem;
+ }
+
+ #text_field{
+   border: 1px solid rgb(67, 68, 73);
+   border-radius: 7px;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+   margin-bottom: 1rem;
+ }
+
+/* home-page styling */
+
+
+
+/* Header Styles */
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#get-started{
+  text-decoration: none;
+  padding-right: 0.5rem;
+  color: rgba(0, 0, 0, 0.616);
+  font-size: medium;
+}
+#get-started:hover{
+  color: rgba(0, 0, 0, 1);
+  font-size: large;
+}
+
+h1 {
+	margin: 0;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+nav a {
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 0.2s;
+}
+
+nav a:hover {
+	color: #999;
+}
+
+/* Hero Styles */
+.hero {
+	padding: 100px 20px;
+	text-align: center;
+}
+
+.features{
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+}
+/* end of home-page styling */

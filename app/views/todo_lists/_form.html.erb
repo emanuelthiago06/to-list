@@ -11,16 +11,16 @@
   <% end %>
 
   <div>
-    <%= form.label :titulo, style: "display: block" %>
-    <%= form.text_field :title %>
+    <%= form.label :titulo, style: "display: block", id: "label" %>
+    <%= form.text_field :title, id: "text_field" %>
   </div>
 
   <div>
-    <%= form.label :descrição, style: "display: block" %>
-    <%= form.text_area :description %>
+    <%= form.label :descrição, style: "display: block", id: "label" %>
+    <%= form.text_area :description, id: "text_field" %>
   </div>
 
   <div>
-    <%= form.submit "editar lista" %>
+    <%= form.submit "editar lista", id: "btn", class: "btn_edit", style: "margin-left: 0px" %>
   </div>
 <% end %>
